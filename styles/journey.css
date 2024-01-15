@@ -15,6 +15,17 @@ body {
     color: #FF5400;
 }
 
+.primary-title {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.primary-para {
+    color: rgba(19, 19, 24, 0.70);
+    font-weight: 400;
+}
+
 .btn-primary {
     border-radius: 8px;
     background: #FF5400;
@@ -107,6 +118,20 @@ body {
     border: none;
 }
 
+/* popular section */
+.popular-tour {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-description {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.popular-container li {
+    margin-bottom: 24px;
+}
 
 
 /* responsive for mobile device */
@@ -129,5 +154,26 @@ body {
 
     .banner-text {
         padding-bottom: 70px;
+    }
+
+    .popular-tour {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .popular-container {
+        width: 100%;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    .popular-img {
+        width: 100px;
+
+    }
+
+    .popular-img img {
+        width: 450px;
+        margin-left: 30%;
     }
 }
