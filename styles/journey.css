@@ -387,6 +387,55 @@ footer {
     margin-top: 20px;
 }
 
+/* unique section style */
+.download-app {
+    border: 2px solid #FF5400;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 60px;
+    margin-top: 80px;
+    background-image: linear-gradient(to right, rgb(159, 143, 180), rgb(28, 146, 146));
+}
+
+.download-text {
+    display: flex;
+    align-items: center;
+
+}
+
+.download-text h3,
+p {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.download-text img {
+    width: 80px;
+}
+
+.down-special {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.download-img {
+    display: flex;
+    align-items: center;
+}
+
+.download-logo img {
+    width: 100px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.qr-code img {
+    width: 150px;
+}
+
+
 /* responsive for mobile device */
 @media screen and (max-width:600px) {
     .navbar {
@@ -500,5 +549,16 @@ footer {
 
     .letter-img img {
         width: 500px;
+    }
+
+    .download-app {
+        flex-direction: column;
+    }
+
+    .download-img {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
     }
 }
