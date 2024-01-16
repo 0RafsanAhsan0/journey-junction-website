@@ -218,11 +218,12 @@ body {
 }
 
 /* choose styles */
-.choose{
+.choose {
     margin-top: 100px;
-    
+
 }
-.choose-container{
+
+.choose-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -231,8 +232,9 @@ body {
     gap: 50px;
     /* padding: 20px; */
 }
+
 .choose>h3 {
-    text-align: center;margin-top: ;
+    text-align: center;
 }
 
 .choose>p {
@@ -274,6 +276,88 @@ body {
     background: rgba(233, 68, 68, 0.05);
 }
 
+/* newsletter style */
+.news-letter {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.letter-content {
+    width: 50%;
+    margin: 0 auto;
+    height: 490px;
+    margin-right: 40px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FF5400;
+}
+
+
+
+
+.letter-content h3 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.letter-content p {
+    color: #5A5A5D;
+    font-weight: 400;
+    padding-top: 16px;
+    padding-bottom: 48px;
+}
+
+
+.fields {
+    border: none;
+    padding: 16px 250px 16px 16px;
+    background: rgba(19, 19, 24, 0.05);
+    border-radius: 8px;
+    width: 390px;
+    margin-bottom: 20px;
+}
+
+.letter-button {
+    border-radius: 8px;
+    width: 390px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: white;
+    font-size: 1.3rem;
+    border: none;
+    padding: 14px 140px;
+}
+
+.letter-img {
+    width: 50%;
+    height: 422px;
+    position: relative;
+}
+
+.img-badge {
+    max-width: 324px;
+    border-radius: 16px;
+    background: #FF5400;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: -8%;
+    left: 82%;
+    transform: rotate(-45deg);
+}
+
+.letter-img img {
+    width: 100%;
+}
+
+/* footer style */
 
 
 /* responsive for mobile device */
@@ -367,8 +451,27 @@ body {
         grid-row: 7/span 1;
 
     }
-    .choose-card{
+
+    .choose-card {
         flex-basis: auto;
-        
+
+    }
+
+    .news-letter {
+        flex-direction: column;
+    }
+
+    .letter-content {
+        width: 100%;
+    }
+
+    .img-badge {
+        position: absolute;
+        bottom: 30%;
+        left: 90%;
+    }
+
+    .letter-img img {
+        width: 500px;
     }
 }
